@@ -375,7 +375,7 @@ public sealed class ShellLink : IDisposable
     /// </summary>
     private ShellLink(string path)
     {
-        _name = Path.GetFullPath(path);
+        _name = path;
         _hotKey = -1;
         _flags = -1;
         _shellLink = new Shell32.IShellLink();
